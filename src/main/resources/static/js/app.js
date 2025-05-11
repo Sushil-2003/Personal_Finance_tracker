@@ -7,7 +7,7 @@ let summaryBarChart = null; // Bar chart instance
 
 //const API_BASE_URL = '/api'; // Base URL for API requests
 
-const API_BASE_URL = 'https://finance-tracker-app.herokuapp.com/api'; //Heroku URL
+const API_BASE_URL = 'https://personal-finance-tracker-web.onrender.com/api';
 
 // DOM references for views
 const views = {
