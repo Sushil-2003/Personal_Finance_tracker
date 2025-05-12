@@ -3,7 +3,7 @@ services:
     name: personal-finance-tracker
     env: java
     buildCommand: mvn clean package
-    startCommand: java -jar target/finance-tracker-0.0.1-SNAPSHOT.jar
+    startCommand:  java -jar target\Personal-Finance-Tracker-0.0.1-SNAPSHOT.jar
     envVars:
       - key: SPRING_DATASOURCE_URL
         value: jdbc:mysql://finance-tracker.c722gaigcrao.eu-north-1.rds.amazonaws.com:3306/finance_tracker?useSSL=false&serverTimezone=UTC

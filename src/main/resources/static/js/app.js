@@ -5,9 +5,9 @@ let categories = []; // Available categories
 let expensePieChart = null; // Pie chart instance
 let summaryBarChart = null; // Bar chart instance
 
-//const API_BASE_URL = '/api'; // Base URL for API requests
+const API_BASE_URL = '/api'; // Base URL for API requests
 
-const API_BASE_URL = 'https://personal-finance-tracker-web.onrender.com/api';
+//const API_BASE_URL = 'https://personal-finance-tracker-web.onrender.com/api';
 
 // DOM references for views
 const views = {
