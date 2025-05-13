@@ -1,0 +1,1 @@
+web: java -jar target/Personal_Finance_Tracker-0.0.1-SNAPSHOT.jar
