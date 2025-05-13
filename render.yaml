@@ -1,19 +1,17 @@
 services:
   - type: web
     name: personal-finance-tracker
-    env: java
-    buildCommand: mvn clean package
-    startCommand:  java -jar target\Personal-Finance-Tracker-0.0.1-SNAPSHOT.jar
+    runtime: node
+    buildCommand: ./mvnw clean install
+    startCommand: java -jar target/Personal_Finance_Tracker-0.0.1-SNAPSHOT.jar
     envVars:
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:mysql://finance-tracker.c722gaigcrao.eu-north-1.rds.amazonaws.com:3306/finance_tracker?useSSL=false&serverTimezone=UTC
+        value: jdbc:mysql://gondola.proxy.rlwy.net:33405/railway
       - key: SPRING_DATASOURCE_USERNAME
-        value: admin
+        value: root
       - key: SPRING_DATASOURCE_PASSWORD
-        value: V_nxm!NGFD"9P3B
+        value: TxHjyAxbTuQfzZKHWaMmqJIaWpwtqwTO
       - key: SPRING_JPA_HIBERNATE_DDL_AUTO
         value: update
       - key: JWT_SECRET
         value: qG9kW0xL2mP5vN8rT3zY7bQ4jX1tF6hJ9cD2sA8e
-      - key: SERVER_PORT
-        value: 8080
